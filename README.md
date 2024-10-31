@@ -24,12 +24,18 @@ Este trabalho consiste na criação de uma Rede Bayesiana utilizando o conjunto 
 
 ## Requisitos
 
-- [x] Escolher um Dataset
-- [ ] Exploração e Pré-processamento dos Dados
-- [ ] Estruturação da Rede Bayesiana
-- [ ] Treinamento e Ajuste de Hiperparâmetros
-- [ ] Avaliação do Modelo
-- [ ] Relatório Técnico-Científico em LaTeX
+- [ ] Coleta de Dados: Importar o conjunto de dados Adult Income Dataset para análise.
+- [ ] Exploração e Pré-processamento: 
+  - Realizar uma análise exploratória dos dados (EDA).
+  - Tratar valores ausentes e inconsistentes.
+  - Codificar variáveis categóricas em formato numérico.
+- [ ] Definição da Estrutura da Rede: 
+  - Identificar e definir as variáveis relevantes para a rede.
+  - Estruturar a rede de acordo com as relações de dependência entre as variáveis.
+- [ ] Treinamento do Modelo: Implementar a Rede Bayesiana e realizar o treinamento utilizando os dados pré-processados.
+- [ ] Ajuste de Hiperparâmetros: Experimentar diferentes configurações e ajustar hiperparâmetros para otimizar o desempenho do modelo.
+- [ ] Avaliação do Modelo: Avaliar o modelo utilizando métricas apropriadas, como precisão, recall, F1-score e matriz de confusão.
+- [ ] Geração de Relatório: Documentar todas as etapas do projeto, incluindo a análise dos resultados e discussões sobre as implicações dos achados.
 
 
 ## Ferramentas
