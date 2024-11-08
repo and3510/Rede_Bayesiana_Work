@@ -57,6 +57,8 @@ Desenvolver o algoritmos para cada etapa do trabalho, problemas de excesso de us
 
 Após o pré-processamento, observamos, com base na análise visual do histograma da Informação Mútua (veja o histograma abaixo), que foram identificadas variáveis que aparentam ter uma influência significativa sobre a variável alvo "renda". Dentre elas, destaca-se "horas trabalhadas por semana", que geralmente possui uma correlação com o nível de renda; "relacionamento", que se refere ao tipo de vínculo pessoal e pode afetar a estabilidade financeira; e "estado civil", que influencia o perfil econômico. As variáveis "educação" e "ocupação" também foram observadas como fatores relevantes, já que o nível de escolaridade e o tipo de emprego estão frequentemente associados à capacidade de ganho. Além disso, "sexo" e "idade" apresentaram padrões de separação entre as classes de "renda", sugerindo que essas variáveis também podem contribuir para a construção de um modelo preditivo robusto.
 
+<br>
+
 <div align="center">
 
 
@@ -64,7 +66,11 @@ Após o pré-processamento, observamos, com base na análise visual do histogram
 
 </div>
 
+<br>
+
 A estrutura da rede Bayesiana foi elaborada com o objetivo de capturar as relações de dependência entre as variáveis mais relevantes do conjunto de dados, utilizando duas abordagens distintas: o BIC Score e o K2 Score. A primeira estrutura, obtida com o BIC Score, é mais seletiva, conectando apenas as variáveis com dependências diretas mais significativas, resultando em uma rede menos densa e mais interpretável. Já a segunda estrutura, construída com o K2 Score, apresenta uma rede Bayesiana mais densa e complexa, onde praticamente todas as variáveis estão interligadas, permitindo capturar relações mais sutis entre as variáveis. Essa diferença ocorre porque o K2 Score é um critério que favorece redes mais complexas, sem penalizar tanto a inclusão de conexões adicionais como faz o BIC Score. Essas duas estruturas permitem comparar a simplicidade e a complexidade na modelagem das dependências probabilísticas, possibilitando uma análise mais completa da influência das variáveis sobre o modelo.
+
+<br>
 
 <div align="center">
 
@@ -72,6 +78,8 @@ A estrutura da rede Bayesiana foi elaborada com o objetivo de capturar as relaç
 <img src="images/k2_diagrama.png" alt="Estrutura K2" width="45%">
 
 </div>
+
+<br>
 
 Com base nessa seleção, realizamos ajustes metodológicos adicionais para garantir a precisão e a interpretabilidade do modelo. Para o ajuste dos hiperparâmetros, utilizamos técnicas de otimização iterativa, visando balancear a complexidade do modelo e evitar o overfitting. Aplicamos também estratégias de treinamento com validação cruzada para avaliar a consistência do desempenho do modelo em diferentes subconjuntos dos dados. Essas escolhas metodológicas, apoiadas por uma análise visual prévia, foram essenciais para aumentar a robustez e a eficácia do modelo na tarefa de classificação da renda, assegurando que ele generalize bem em novos dados.
 
@@ -88,6 +96,8 @@ No entanto, os modelos diferiram em sua interpretação para as cargas horárias
 
 Esses resultados combinados sugeriram que tanto o tipo de relacionamento quanto a carga horária afetaram as previsões de renda, com o BIC Score fornecendo uma visão mais simplificada e o K2 Score permitindo uma análise mais detalhada. Dessa forma, ambos os modelos contribuíram para uma compreensão abrangente do impacto dessas variáveis na renda, destacando a influência de cargas horárias extremas e a complexidade das relações nas horas intermediárias. A imagem a seguir apresenta um gráfico que ilustra as estruturas dos dois modelos, permitindo uma visualização direta das diferenças entre o BIC Score e o K2 Score. Essa visualização reforça as conclusões obtidas, evidenciando como cada modelo estruturou as conexões entre as variáveis para capturar as relações condicionais entre "relationship", "hours-per-week" e "income".
 
+<br>
+
 <div align="center">
 
 <img src="images/treinamento_Bic.png" alt="Gráfico do Modelo BIC" width="45%">
@@ -95,11 +105,15 @@ Esses resultados combinados sugeriram que tanto o tipo de relacionamento quanto 
 
 </div>
 
+<br>
+
 A eficácia dos modelos BIC Score e K2 Score para a previsão de faixas de renda mostrou-se promissora, especialmente ao identificar padrões claros em extremos de carga horária (30 e 60 horas por semana) e sua associação com rendas altas. Os resultados das inferências permitiram observar que esses modelos conseguem captar as relações entre variáveis críticas, como "relationship" e "hours-per-week", e sua influência sobre a probabilidade de uma alta renda. O modelo BIC Score proporcionou uma estrutura simplificada, tornando-o vantajoso para uma interpretação mais rápida e geral. Em contraste, o K2 Score, com sua flexibilidade estrutural, ofereceu uma análise mais detalhada, capturando nuances adicionais entre diferentes tipos de relacionamentos e cargas horárias.
 
 Os resultados da avaliação dos modelos com BIC Score e K2 Score demonstraram um desempenho bastante semelhante e satisfatório na tarefa de previsão de renda. A AUC próxima de 0.92 para ambos os modelos indica uma forte capacidade de separação entre as classes de renda, evidenciando que os modelos conseguem distinguir bem entre os indivíduos de alta e baixa renda com base nas variáveis selecionadas. Com acurácias de aproximadamente 89.8% e valores de Log-Loss próximos de 0.24, ambos os modelos mostraram ser consistentes, proporcionando previsões com alta precisão e baixas taxas de erro nas probabilidades.
 
 As curvas ROC, exibidas na imagem com os gráficos de avaliação dos dois modelos, ilustram um comportamento semelhante entre eles, com ambos apresentando uma taxa de verdadeiro positivo (TPR) alta mesmo com uma taxa de falso positivo (FPR) relativamente baixa. Isso sugere que os modelos são eficazes em minimizar falsos positivos, reforçando a confiabilidade das previsões. Embora as diferenças entre os modelos sejam sutis, o BIC tende a favorecer uma estrutura mais simples, enquanto o K2 permite uma estrutura ligeiramente mais complexa, o que pode oferecer uma análise mais detalhada das interações entre variáveis, dependendo do objetivo específico da análise.
+
+<br>
 
 
 <div align="center">
@@ -108,6 +122,8 @@ As curvas ROC, exibidas na imagem com os gráficos de avaliação dos dois model
 <img src="images/k2_avaliacao.png" alt="Gráfico de Avaliação do Modelo K2" width="45%">
 
 </div>
+
+<br>
 
 Esses resultados, combinados com as visualizações, indicam que tanto o BIC quanto o K2 são adequados para modelagem de renda, fornecendo insights
 
