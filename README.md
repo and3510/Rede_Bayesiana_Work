@@ -131,7 +131,11 @@ As curvas ROC, exibidas na imagem com os gráficos de avaliação dos dois model
 
 <br>
 
-Esses resultados, combinados com as visualizações, indicam que tanto o BIC quanto o K2 são adequados para modelagem de renda, fornecendo insights
+Esses resultados, combinados com as visualizações, indicam que tanto o BIC quanto o K2 são adequados para modelagem de renda, fornecendo insights consistentes e permitindo uma análise mais ampla sobre o impacto das variáveis na previsão de faixas de renda.
+
+No entanto, algumas limitações foram observadas. A simplicidade do BIC Score pode comprometer a detecção de relações mais complexas, levando a uma possível subestimação em cenários intermediários de carga horária. Já o K2 Score, ao permitir uma estrutura mais detalhada, pode apresentar uma tendência a capturar detalhes excessivos, o que, em alguns casos, pode levar ao sobreajuste e afetar a generalização do modelo para novos dados. Além disso, ambos os modelos foram treinados com um conjunto de dados fixo de 22.000 registros; embora essa amostra forneça uma visão abrangente, variações nos dados reais poderiam modificar as inferências.
+
+Outro ponto a ser considerado é a influência de variáveis que não foram incluídas no modelo ou foram simplificadas. Variáveis como tipo de ocupação e nível de escolaridade poderiam adicionar camadas de interpretação, potencialmente melhorando a precisão na previsão de faixas de renda. Portanto, esses resultados, embora úteis, devem ser analisados com cautela, e futuras extensões do modelo poderiam explorar a inclusão de mais variáveis ou ajustes nos parâmetros dos modelos.
 
 ## Conclusão
 
