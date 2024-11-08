@@ -42,10 +42,15 @@ Este trabalho consiste na criação de uma Rede Bayesiana utilizando o conjunto 
 ## Ferramentas
 
 - **Python**: Uma linguagem de programação de alto nível, versátil e de fácil leitura, amplamente utilizada para desenvolvimento web, análise de dados, inteligência artificial e automação.
-- **sklearn**: Biblioteca para aprendizado de máquina que fornece ferramentas para classificação, regressão e clustering, além de métodos de avaliação de modelos.  
-- **matplotlib**: Biblioteca de visualização que permite criar gráficos e plots estáticos, interativos e animados em Python.  
-- **pandas**: Biblioteca que oferece estruturas de dados flexíveis e eficientes, como DataFrames, para manipulação e análise de dados em Python.
 - **Overleaf**: Uma plataforma colaborativa baseada em nuvem para edição de documentos em LaTeX, que permite aos usuários criar, compartilhar e publicar trabalhos acadêmicos de forma eficiente.
+- **pandas**: Biblioteca que oferece estruturas de dados eficientes, como DataFrames, para manipulação e análise de dados em Python.
+- **numpy**: Biblioteca para computação numérica, que fornece suporte para arrays multidimensionais e funções matemáticas de alto desempenho.
+- **matplotlib**: Ferramenta de visualização para criar gráficos e plots estáticos, interativos e animados em Python.
+- **seaborn**: Biblioteca de visualização de dados que simplifica a criação de gráficos estatísticos e é baseada no matplotlib, proporcionando uma estética mais estilizada.
+- **sklearn**: Biblioteca de aprendizado de máquina que inclui ferramentas para classificação, regressão, clustering e avaliação de modelos.
+- **pgmpy**: Biblioteca para modelagem de redes probabilísticas, incluindo Redes Bayesianas, com suporte para inferência e aprendizado.
+- **networkx**: Biblioteca para a criação, manipulação e estudo da estrutura, dinâmica e funções de grafos e redes.
+- **ucimlrepo**: Ferramenta para acessar datasets do repositório UCI Machine Learning, facilitando o download e a manipulação de conjuntos de dados.
 
 
 ## Dificuldades
